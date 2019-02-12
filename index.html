@@ -4,12 +4,52 @@
         <meta charset="UTF-8">
         <title>My fancy products</title>
         <style>
-            body { 
+            header { 
                 background-image: url('images/beverage-3157395_1920.jpg');
                 background-size: 100%;
+                min-height: 200px;
+            }
+            article {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
         </style>
     </head>
     <body>
+        <header>
+            <h1>Black Mesa Brakes</h1>
+            <h2>Helping cyclists stop since 1999</h2>
+            <nav>
+            </nav>
+        </header>
+        <article>
+            <section>
+                <div class="prod_container">
+                    <img src="images/racing-bike-598195_640.jpg"/>
+                    <label>Entry</label>
+                    <ul>
+                        <li>200g</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="prod_container">
+                    <img src="images/racing-bike-598195_640.jpg"/>
+                    <label>Enthusiast</label>
+                    <ul>
+                        <li>100g</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="prod_container">
+                    <img src="images/racing-bike-598195_640.jpg"/>
+                    <label>Professional</label>
+                    <ul>
+                        <li>75g</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
     </body>
 </html>
