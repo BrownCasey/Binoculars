@@ -9,9 +9,21 @@
                 background-size: 100%;
                 min-height: 200px;
             }
-            article {
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .grid-container3 {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+            .prod_container {
+                padding: 0 10px 0 10px;
+            }
+            #section1 {
+                background-color: rgb(240, 240, 240);
+                height: 100px;
+                padding: 0 10px 0px 10px;
             }
         </style>
     </head>
@@ -23,7 +35,10 @@
             </nav>
         </header>
         <article>
-            <section>
+            <section id="section1">
+                <p>Bike brakes for people that really like to slow down</p>
+            </section>
+            <section id="section2" class="grid-container3">
                 <div class="prod_container">
                     <img src="images/racing-bike-598195_640.jpg"/>
                     <label>Entry</label>
@@ -31,8 +46,6 @@
                         <li>200g</li>
                     </ul>
                 </div>
-            </section>
-            <section>
                 <div class="prod_container">
                     <img src="images/racing-bike-598195_640.jpg"/>
                     <label>Enthusiast</label>
@@ -40,8 +53,6 @@
                         <li>100g</li>
                     </ul>
                 </div>
-            </section>
-            <section>
                 <div class="prod_container">
                     <img src="images/racing-bike-598195_640.jpg"/>
                     <label>Professional</label>
@@ -49,6 +60,8 @@
                         <li>75g</li>
                     </ul>
                 </div>
+            </section>
+            <section id="section3">
             </section>
         </article>
     </body>
