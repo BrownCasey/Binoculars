@@ -2,16 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My fancy products</title>
+        <title>Hardy Booker Binoculars</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <style>
+            a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+            article {
+                clear: both;
+            }
             body {
-                margin: 0 5% 0 5%;
+                margin: 0 10% 0 10%;
+            }
+            button {
+                border: 1px solid #373737;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0);
+                margin: 0 0 10px 0;
+                font-size: 1em;
             }
             header { 
-                background-image: url('images/road-3856796_1920.jpg');
-                background-size: 33.3%;
                 width: 100%;
-                min-height: 200px;
+            }
+            h1, h2, h3, h4, a {
+                font-family: 'Montserrat', sans-serif;
+                color: rgb(55, 55, 55);
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.7em;
+            }
+            h3 {
+                font-size: 1.4em;
             }
             hr {
                 border-top: 1px solid rgb(25, 25, 255);
@@ -20,9 +45,50 @@
                 width: 100%;
                 height: auto;
             }
+            li {
+                margin-left: 20px;
+            }
+            nav ul {
+                font-family: 'Montserrat', sans-serif;
+                list-style-type: none;
+                margin: 0 0 4px 0;   
+            }
+            .center{
+                margin: auto;
+                text-align: center;
+            }
+            .txtcenter{
+                text-align: center;
+            }
+            .flex {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .flex-end {
+                align-items: flex-end;
+            }
+            .grid-container2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .grid-container2:nth-child(1n) {
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
             .grid-container3 {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+            .logo {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.8em;
+                letter-spacing: 0.20em;
+                margin: 0;
+                margin-bottom: -20;
+            }
+            .norepeat {
+                background-repeat: no-repeat;
             }
             .prod_container {
                 padding: 0 10px 0 10px;
@@ -30,6 +96,19 @@
             .prod_container h1, .prod_container h2, .prod_container h3{
                 text-align: center;
                 margin: 0;
+            }
+            .right {
+                float: right;
+                text-align: right;
+            }
+            .right:after {
+                clear: both;
+            }
+            #bird {
+                background-image: linear-gradient(75deg, #F1F1F1, #d5ffcc , #bcffcc, #FAFAFA);
+            }
+            #bino {
+                background-image: linear-gradient(-75deg, #F1F1F1, #cccccc, #FAFAFA);
             }
             #section1 {
                 background-color: rgb(240, 240, 240);
@@ -40,50 +119,76 @@
                 .grid-container3 {
                     display: block;
                 }
+                body {
+                    margin: 0 5% 0 5%;
+                }
             }
         </style>
     </head>
     <body>
-        <header>
-            <h1>Black Mesa Brakes</h1>
-            <h2>Helping cyclists stop since 1999</h2>
+        <header class="flex flex-end">
+            <h1 class="logo">Hardy Booker</h1>
             <nav>
+                <ul class="flex flex-end">
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#guarantee">Guarantee</a></li>
+                </ul>
             </nav>
         </header>
         <article>
-            <section id="section1">
-                <p>Bike brakes for people that really like to slow down</p>
+            <section id="intro" class="grid-container2">
+                <div id="bird" class="center">
+                    <img src="images/hummingbird-2139279_640trans.png"/>
+                    <h2>See Nature in a New Way</h2>
+                    <button>Learn more</button>
+                </div>
+                <div id="bino" class="norepeat">
+                    <img src="images/binoculars-995779_640trans.png"/>
+                    <h2 class="txtcenter">Get Closer Than Ever Before</h2>
+                    <div class="center">
+                        <button>Learn more</button>
+                    </div>
+                </div>
             </section>
-            <section id="section2" class="grid-container3">
+            <section id="collection" class="grid-container3">
                 <div class="prod_container">
-                    <img src="images/racing-bike-598195_640.jpg"/>
-                    <h1>X13</h1>
+                    <img src="images/binoRight-685174_640.png"/>
+                    <h1>Sparrow</h1>
                     <h2>Starting at $99</h2>
                     <hr/>
-                    <h3>100g</h3>
+                    <h3>7x35</h3>
                     <hr/>
                     <p>Praesent metus velit, condimentum nec eros a, pretium posuere mi. Sed sem ante, fringilla bibendum lectus nec, efficitur porttitor tortor. Phasellus interdum lectus id libero sagittis, nec vehicula orci venenatis.</p>
                 </div>
                 <div class="prod_container">
-                    <img src="images/racing-bike-598195_640.jpg"/>
-                    <h1>X14</h1>
+                    <img src="images/binoLeft-685174_640.png"/>
+                    <h1>Warbler</h1>
                     <h2>Starting at $199</h2>
                     <hr/>
-                    <h3>80g</h3>
+                    <h3>8x40</h3>
                     <hr/>
                     <p>Fusce pharetra gravida cursus. Cras sed velit metus. Integer nec quam pulvinar, pharetra risus sed, commodo eros. Suspendisse id pellentesque nibh. Ut luctus augue eu dui eleifend, non condimentum magna.</p>
                 </div>
                 <div class="prod_container">
-                    <img src="images/racing-bike-598195_640.jpg"/>
-                    <h1>X15</h1>
+                    <img src="images/binoRight-685174_640.png"/>
+                    <h1>Flicker</h1>
                     <h2>Starting at $399</h2>
                     <hr/>
-                    <h3>70g</h3>
+                    <h3>10x45</h3>
                     <hr/>
                     <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
                 </div>
             </section>
-            <section id="section3">
+            <section id="benefits">
+                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
+            </section>
+            <section id="features">
+                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
+            </section>
+            <section id="guarantee">
+                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
             </section>
         </article>
     </body>
