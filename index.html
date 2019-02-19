@@ -132,6 +132,12 @@
             .txtcenter > :not(marquee){
                 text-align: center;
             }
+            .ulcol {
+                list-style: none;
+            }
+            .ulrow {
+                list-style: none;
+            }
             #bird {
                 background-image: linear-gradient(75deg, #F1F1F1, #d5ffcc , #bcffcc, #FAFAFA);
             }
@@ -209,8 +215,29 @@
                     <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
                 </div>
             </section>
-            <section id="benefits" class="info txtcenter">
-                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
+            <section id="benefits" class="info">
+                <h1>About the binoculars</h1>
+                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi.</p>
+                <ul class="ulcol">
+                    <li>Light weight and durable</li>
+                    <li>Best for traveling</li>
+                <ul>
+                <ul class="ulrow">
+                    <li>
+                        <h3>magnification</h3>
+                        <p>7x</p>
+                    </li>
+                    <li>
+                        <h3>field of view</h3>
+                        <p>100 deg</p>
+                    </li>
+                <ul>
+                <p>well this is interesting:</p>
+                <p>
+                    .info > *{ <br/>
+                margin: 25px auto 25px auto;<br/>
+                max-width: 600px;<br/>
+                }</p>
             </section>
             <section id="features" class="info txtcenter">
                 <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
