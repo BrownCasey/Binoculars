@@ -17,10 +17,10 @@
             }
             button {
                 border: 1px solid #373737;
-                border-radius: 10px;
-                background-color: rgba(0, 0, 0, 0);
+                border-radius: 100px;
                 margin: 0 0 10px 0;
-                font-size: 1em;
+                font-size: 1.1em;
+                padding: 10px;
             }
             header { 
                 width: 100%;
@@ -39,7 +39,7 @@
                 font-size: 1.4em;
             }
             hr {
-                border-top: 1px solid rgb(25, 25, 255);
+                border-top: 2px solid #95b28e;
             }
             img {
                 width: 100%;
@@ -53,11 +53,26 @@
                 list-style-type: none;
                 margin: 0 0 4px 0;   
             }
+            .bg-bright{
+                background-color: #96ff80;
+            }
+            .bg-dark{
+                background-color: #95b28e;
+            }
+            .bg-light{
+                background-color: #d5ffcc;
+            }
+            .bg-mid{
+                background-color: #abff99;
+            }
+            .bg-transparent{
+                background-color: rgba(0,0,0,0);
+            }
+            .bg-white{
+                background-color: #fefefe;
+            }
             .center{
                 margin: auto;
-                text-align: center;
-            }
-            .txtcenter{
                 text-align: center;
             }
             .flex {
@@ -79,6 +94,16 @@
             .grid-container3 {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+            .info > *{
+                margin: 25px auto 25px auto;
+                max-width: 600px;
+            }
+            .info:nth-child(2n) {
+                background-color: #abff99;
+            }
+            .info:nth-child(2n+1) {
+                background-color: #d5ffcc;
             }
             .logo {
                 font-family: 'Montserrat', sans-serif;
@@ -104,6 +129,9 @@
             .right:after {
                 clear: both;
             }
+            .txtcenter > :not(marquee){
+                text-align: center;
+            }
             #bird {
                 background-image: linear-gradient(75deg, #F1F1F1, #d5ffcc , #bcffcc, #FAFAFA);
             }
@@ -116,11 +144,11 @@
                 padding: 0 10px 0px 10px;
             }
             @media screen and (max-width: 700px){
-                .grid-container3 {
-                    display: block;
-                }
                 body {
                     margin: 0 5% 0 5%;
+                }
+                .grid-container3 {
+                    display: block;
                 }
             }
         </style>
@@ -141,14 +169,14 @@
             <section id="intro" class="grid-container2">
                 <div id="bird" class="center">
                     <img src="images/hummingbird-2139279_640trans.png"/>
-                    <h2>See Nature in a New Way</h2>
-                    <button>Learn more</button>
+                    <h2>Get Closer Than Ever Before</h2>
+                    <button class="bg-bright">Learn more</button>
                 </div>
                 <div id="bino" class="norepeat">
                     <img src="images/binoculars-995779_640trans.png"/>
-                    <h2 class="txtcenter">Get Closer Than Ever Before</h2>
+                    <h2 class="txtcenter">See Nature in a New Way</h2>
                     <div class="center">
-                        <button>Learn more</button>
+                        <button class="bg-white">Learn more</button>
                     </div>
                 </div>
             </section>
@@ -181,14 +209,19 @@
                     <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
                 </div>
             </section>
-            <section id="benefits">
+            <section id="benefits" class="info txtcenter">
                 <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
             </section>
-            <section id="features">
+            <section id="features" class="info txtcenter">
                 <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
             </section>
-            <section id="guarantee">
-                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
+            <section id="guarantee" class="info txtcenter">
+                <h3>Money back guarantee</h3>
+                <h2>If you don't love these binoculars, return them for a full refund.</h2>
+                <div>what is this
+                    <p>This is not centered</p>
+                </div>
+                <p>We want you to be fully satisfied with your order. If you wish to return the binoculars for any reason, you will receive a full refund. We pay return shipping. Please provide feedback on your experience so we better serve you in the future.</p>
             </section>
         </article>
     </body>
