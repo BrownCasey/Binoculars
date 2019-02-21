@@ -105,6 +105,10 @@
             .info:nth-child(2n+1) {
                 background-color: #d5ffcc;
             }
+            .info label {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
             .logo {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 1.8em;
@@ -135,12 +139,16 @@
             .ulcol li {
                 list-style: none;
                 margin-bottom: 10px;
+                font-family: 'Montserrat', sans-serif;
+                color: rgb(55, 55, 55);
             }
             .ulrow {
                 list-style: none;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                font-family: 'Montserrat', sans-serif;
+                color: rgb(55, 55, 55);
             }
             #bird {
                 background-image: linear-gradient(75deg, #F1F1F1, #d5ffcc , #bcffcc, #FAFAFA);
@@ -198,7 +206,7 @@
                     <hr/>
                     <h3>7x35</h3>
                     <hr/>
-                    <p>The perfect pair when mobility and a wide view are top priorities. Weighing just over 20oz, these binoculars won't slow you down. A 120 degree field of view is ideal for scanning large areas and following birds in motion.</p>
+                    <p>The perfect pair when mobility and a wide view are top priorities. Weighing just over 20oz, these binoculars won't slow you down. A 9 degree field of view is ideal for scanning large areas and following birds in motion.</p>
                 </div>
                 <div class="prod_container">
                     <img src="images/binoLeft-685174_640.png"/>
@@ -207,35 +215,82 @@
                     <hr/>
                     <h3>8x40</h3>
                     <hr/>
-                    <p>This is where portability and versatility excel to bring you the most stunning visuals. The Warbler has a 110 degree field of view and the magnification you need to identify your favorite birds from over 300ft away.</p>
+                    <p>This is where portability and versatility excel to bring you the most stunning visuals. The Warbler has an 8 degree field of view and the magnification you need to identify your favorite birds from a distance.</p>
                 </div>
                 <div class="prod_container">
                     <img src="images/binoRight-685174_640.png"/>
                     <h1>Flicker</h1>
                     <h2>Starting at $399</h2>
                     <hr/>
-                    <h3>10x45</h3>
+                    <h3>10x42</h3>
                     <hr/>
-                    <p>Heavy duty binoculars for low-light conditions and getting up close. The Flicker uses patented buffer medium to stabilize the viewing experience. It must be seen to be believed.</p>
+                    <p>Heavy duty binoculars for low-light conditions and getting up close. The Flicker contains patented buffer medium to stabilize the lenses for an unparalleled viewing experience.</p>
                 </div>
             </section>
-            <section id="benefits" class="info">
-                <h1>About the binoculars</h1>
-                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi.</p>
+            <section id="benefits" class="info grid-container2">
+                <div>
+                    <h1>About the binoculars</h1>
+                    <p>Proudly designed in Wisconsin and assembled in North America. See the difference right away.</p>
+                    <ul class="ulcol">
+                        <li>Light weight and durable</li>
+                        <li>Best for traveling</li>
+                    </ul>
+                    <ul class="ulrow">
+                        <li>
+                            <label>Magnification</label>
+                            <p>7x</p>
+                        </li>
+                        <li>
+                            <label>Lens diameter</label>
+                            <p>35mm</p>
+                        </li>
+                        <li>
+                            <label>Field of view</label>
+                            <p>488' @ 1000yd</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/binoculars-995779_640trans.png"/>
+                </div>
+            </section>
+            <section id="benefits222" class="info">
                 <ul class="ulcol">
                     <li>Light weight and durable</li>
                     <li>Best for traveling</li>
-                <ul>
+                </ul>
                 <ul class="ulrow">
                     <li>
-                        <h3>magnification</h3>
-                        <p>7x</p>
+                        <label>Magnification</label>
+                        <p>8x</p>
                     </li>
                     <li>
-                        <h3>field of view</h3>
-                        <p>100 deg</p>
+                        <label>Lens diameter</label>
+                        <p>40mm</p>
                     </li>
-                <ul>
+                    <li>
+                        <label>Field of view</label>
+                        <p>430' @ 1000yd</p>
+                    </li>
+                </ul>
+                <ul class="ulcol">
+                    <li>Light weight and durable</li>
+                    <li>Best for traveling</li>
+                </ul>
+                <ul class="ulrow">
+                    <li>
+                        <label>Magnification</label>
+                        <p>10x</p>
+                    </li>
+                    <li>
+                        <label>Lens diameter</label>
+                        <p>42mm</p>
+                    </li>
+                    <li>
+                        <label>Field of view</label>
+                        <p>314' @ 1000yd</p>
+                    </li>
+                </ul>
                 <p>well this is interesting:</p>
                 <p>
                     .info > *{ <br/>
