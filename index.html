@@ -46,12 +46,19 @@
                 height: auto;
             }
             li {
+                margin: 0;
+            }
+            nav li {
                 margin-left: 20px;
             }
             nav ul {
                 font-family: 'Montserrat', sans-serif;
                 list-style-type: none;
                 margin: 0 0 4px 0;   
+            }
+            ul {
+                padding: 0;
+                margin: 0;
             }
             .bg-bright{
                 background-color: #96ff80;
@@ -81,7 +88,7 @@
                 flex-wrap: wrap;
             }
             .flex-end {
-                align-items: flex-end;
+                    align-items: flex-end;
             }
             .grid-container2 {
                 display: grid;
@@ -99,15 +106,24 @@
                 margin: 25px auto 25px auto;
                 max-width: 600px;
             }
+            .info #benefits-left {
+                max-width: 400px;
+            }
+            .info label {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .info li p {
+                text-align: center;
+            }
             .info:nth-child(2n) {
                 background-color: #abff99;
             }
             .info:nth-child(2n+1) {
                 background-color: #d5ffcc;
             }
-            .info label {
-                text-transform: uppercase;
-                font-weight: bold;
+            .info ul, .info li {
+                margin: 10px 15px 10px 0;
             }
             .logo {
                 font-family: 'Montserrat', sans-serif;
@@ -166,6 +182,9 @@
                     margin: 0 5% 0 5%;
                 }
                 .grid-container3 {
+                    display: block;
+                }
+                .info {
                     display: block;
                 }
             }
@@ -228,12 +247,12 @@
                 </div>
             </section>
             <section id="benefits" class="info grid-container2">
-                <div>
+                <div id="benefits-left">
                     <h1>About the binoculars</h1>
-                    <p>Proudly designed in Wisconsin and assembled in North America. See the difference right away.</p>
+                    <p>Proudly designed in Detroit and assembled in North America. See the difference right away.</p>
                     <ul class="ulcol">
                         <li>Light weight and durable</li>
-                        <li>Best for traveling</li>
+                        <li>Great for traveling</li>
                     </ul>
                     <ul class="ulrow">
                         <li>
@@ -250,7 +269,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div id="benefits-right">
                     <img src="images/binoculars-995779_640trans.png"/>
                 </div>
             </section>
