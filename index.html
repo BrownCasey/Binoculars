@@ -116,11 +116,13 @@
             .info li p {
                 text-align: center;
             }
-            .info:nth-child(2n) {
-                background-color: #abff99;
-            }
             .info:nth-child(2n+1) {
-                background-color: #d5ffcc;
+                background-image: linear-gradient(-75deg, #F1F1F1, #e6e6e6, #EAEAEA);
+                /*background-color: #abff99;*/
+            }
+            .info:nth-child(2n) {
+                background-image: linear-gradient(75deg, #ddffcc, #ccffcc, #ddffcc);
+                /*background-color: #d5ffcc;*/
             }
             .info ul, .info li {
                 margin: 10px 15px 10px 0;
@@ -149,7 +151,7 @@
             .right:after {
                 clear: both;
             }
-            .txtcenter > :not(marquee){
+            .txtcenter {
                 text-align: center;
             }
             .ulcol li {
@@ -272,53 +274,6 @@
                 <div id="benefits-right">
                     <img src="images/binoculars-995779_640trans.png"/>
                 </div>
-            </section>
-            <section id="benefits222" class="info">
-                <ul class="ulcol">
-                    <li>Light weight and durable</li>
-                    <li>Best for traveling</li>
-                </ul>
-                <ul class="ulrow">
-                    <li>
-                        <label>Magnification</label>
-                        <p>8x</p>
-                    </li>
-                    <li>
-                        <label>Lens diameter</label>
-                        <p>40mm</p>
-                    </li>
-                    <li>
-                        <label>Field of view</label>
-                        <p>430' @ 1000yd</p>
-                    </li>
-                </ul>
-                <ul class="ulcol">
-                    <li>Light weight and durable</li>
-                    <li>Best for traveling</li>
-                </ul>
-                <ul class="ulrow">
-                    <li>
-                        <label>Magnification</label>
-                        <p>10x</p>
-                    </li>
-                    <li>
-                        <label>Lens diameter</label>
-                        <p>42mm</p>
-                    </li>
-                    <li>
-                        <label>Field of view</label>
-                        <p>314' @ 1000yd</p>
-                    </li>
-                </ul>
-                <p>well this is interesting:</p>
-                <p>
-                    .info > *{ <br/>
-                margin: 25px auto 25px auto;<br/>
-                max-width: 600px;<br/>
-                }</p>
-            </section>
-            <section id="features" class="info txtcenter">
-                <p>Cras at suscipit lacus, non iaculis nisl. Etiam nec eros lorem. Aliquam lectus dui, feugiat nec enim ut, malesuada tempus mi. Duis ut felis ligula. Vestibulum aliquet elit vitae magna.</p>
             </section>
             <section id="guarantee" class="info txtcenter">
                 <h3>Money back guarantee</h3>
