@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Hardy Booker Binoculars</title>
+        <title>Hardy Orrell Binoculars</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <style>
             a {
@@ -63,18 +63,6 @@
             .bg-bright{
                 background-color: #96ff80;
             }
-            .bg-dark{
-                background-color: #95b28e;
-            }
-            .bg-light{
-                background-color: #d5ffcc;
-            }
-            .bg-mid{
-                background-color: #abff99;
-            }
-            .bg-transparent{
-                background-color: rgba(0,0,0,0);
-            }
             .bg-white{
                 background-color: #fefefe;
             }
@@ -106,7 +94,7 @@
                 margin: 25px auto 25px auto;
                 max-width: 600px;
             }
-            .info #benefits-left {
+            .info #features-left {
                 max-width: 400px;
             }
             .info label {
@@ -118,11 +106,9 @@
             }
             .info:nth-child(2n+1) {
                 background-image: linear-gradient(-75deg, #F1F1F1, #e6e6e6, #EAEAEA);
-                /*background-color: #abff99;*/
             }
             .info:nth-child(2n) {
                 background-image: linear-gradient(75deg, #ddffcc, #ccffcc, #ddffcc);
-                /*background-color: #d5ffcc;*/
             }
             .info ul, .info li {
                 margin: 10px 15px 10px 0;
@@ -143,13 +129,6 @@
             .prod_container h1, .prod_container h2, .prod_container h3{
                 text-align: center;
                 margin: 0;
-            }
-            .right {
-                float: right;
-                text-align: right;
-            }
-            .right:after {
-                clear: both;
             }
             .txtcenter {
                 text-align: center;
@@ -174,11 +153,6 @@
             #bino {
                 background-image: linear-gradient(-75deg, #F1F1F1, #cccccc, #FAFAFA);
             }
-            #section1 {
-                background-color: rgb(240, 240, 240);
-                height: 100px;
-                padding: 0 10px 0px 10px;
-            }
             @media screen and (max-width: 700px){
                 body {
                     margin: 0 5% 0 5%;
@@ -194,11 +168,10 @@
     </head>
     <body>
         <header class="flex flex-end">
-            <h1 class="logo">Hardy Booker</h1>
+            <h1 class="logo">Hardy Orrell</h1>
             <nav>
                 <ul class="flex flex-end">
                     <li><a href="#collection">Collection</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#guarantee">Guarantee</a></li>
                 </ul>
@@ -209,13 +182,13 @@
                 <div id="bird" class="center">
                     <img src="images/hummingbird-2139279_640trans.png"/>
                     <h2>Get Closer Than Ever Before</h2>
-                    <button class="bg-bright">Learn more</button>
+                    <button class="bg-bright"><a href="#collection">Learn more</a></button>
                 </div>
                 <div id="bino" class="norepeat">
                     <img src="images/binoculars-995779_640trans.png"/>
                     <h2 class="txtcenter">See Nature in a New Way</h2>
                     <div class="center">
-                        <button class="bg-white">Learn more</button>
+                        <button class="bg-white"><a href="#features">Learn more</a></button>
                     </div>
                 </div>
             </section>
@@ -248,8 +221,8 @@
                     <p>Heavy duty binoculars for low-light conditions and getting up close. The Flicker contains patented buffer medium to stabilize the lenses for an unparalleled viewing experience.</p>
                 </div>
             </section>
-            <section id="benefits" class="info grid-container2">
-                <div id="benefits-left">
+            <section id="features" class="info grid-container2">
+                <div id="features-left">
                     <h1>About the binoculars</h1>
                     <p>Proudly designed in Detroit and assembled in North America. See the difference right away.</p>
                     <ul class="ulcol">
@@ -271,17 +244,14 @@
                         </li>
                     </ul>
                 </div>
-                <div id="benefits-right">
+                <div>
                     <img src="images/binoculars-995779_640trans.png"/>
                 </div>
             </section>
             <section id="guarantee" class="info txtcenter">
                 <h3>Money back guarantee</h3>
-                <h2>If you don't love these binoculars, return them for a full refund.</h2>
-                <div>what is this
-                    <p>This is not centered</p>
-                </div>
-                <p>We want you to be fully satisfied with your order. If you wish to return the binoculars for any reason, you will receive a full refund. We pay return shipping. Please provide feedback on your experience so we better serve you in the future.</p>
+                <h2>If you are not fully satisfied, return them for up to 365 days.</h2>
+                <p>We have a no questions asked return policy. Return the binoculars for any reason and we will provide a full refund, return shipping included. Your feedback is appreciated.</p>
             </section>
         </article>
     </body>
