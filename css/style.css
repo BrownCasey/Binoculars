@@ -150,6 +150,9 @@ ul {
     body {
         margin: 0 5% 0 5%;
     }
+    .grid-container2 {
+        display: block;
+    }
     .grid-container3 {
         display: block;
     }
