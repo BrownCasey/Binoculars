@@ -8,7 +8,7 @@ article {
 body {
     margin: 0 10% 0 10%;
 }
-button, input[type="submit"] {
+button {
     border: 1px solid #373737;
     border-radius: 100px;
     margin: 0 0 10px 0;
@@ -38,6 +38,12 @@ img {
     width: 100%;
     height: auto;
 }
+input{
+    border: 1px solid #373737;
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    padding: 10px;
+}
 li {
     margin: 0;
 }
@@ -48,6 +54,9 @@ nav ul {
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     margin: 0 0 4px 0;   
+}
+section {
+    margin: 0 0 20px 0;
 }
 ul {
     padding: 0;
@@ -99,9 +108,11 @@ ul {
 }
 .info:nth-child(2n+1) {
     background-image: linear-gradient(-75deg, #F1F1F1, #e6e6e6, #EAEAEA);
+    padding: 10px 10px 10px 10px;
 }
 .info:nth-child(2n) {
     background-image: linear-gradient(75deg, #ddffcc, #ccffcc, #ddffcc);
+    padding: 10px 10px 10px 10px;
 }
 .info ul, .info li {
     margin: 10px 15px 10px 0;
